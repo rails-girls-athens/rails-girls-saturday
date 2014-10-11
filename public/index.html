@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Rails Girls Athens - Workshop slides</title>
+  <title>Rails Girls Athens - Workshop slides</title>
 
-    <meta name="description" content="Rails Girls Athens - Workshop slides">
-    <meta name="author" content="Jordan Burke">
+  <meta name="description" content="Rails Girls Athens - Workshop slides">
+  <meta name="author" content="Jordan Burke">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <link rel="stylesheet" href="css/custom.css">
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+  document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  </script>
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -33,7 +33,7 @@
 
   <body>
     <div class="reveal">
-    <span class="hashtag">#rgathens</span>
+      <span class="hashtag">#rgathens</span>
 
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
@@ -46,515 +46,599 @@
         <section>
         	<h2>Agenda</h2>
         	<ul>
-        		<li class="fragment">Introduction to web programming</li>
-        		<li class="fragment">Q&amp;A and breaktime</li>
-        		<li class="fragment">Get the app started</li>
-        		<li class="fragment">Lunchtime!</li>
-        		<li class="fragment">Talks</li>
-        		<li class="fragment">Build and extend</li>
-        	</ul>
-        	<aside class="notes">
-	        	<ul>
-	        		<li>Introduction to web programming</li>
-                    <li>Q&amp;A and breaktime</li>
-	        		<li>Get the app started</li>
-	        		<li>Lunchtime!</li>
-	        		<li>Talks</li>
-	        		<li>Build and extend</li>
-	        	</ul>
-	        </aside>
+        		<li class="fragment">Welcome</li>
+            <li class="fragment">Introduction to Programming and Ruby</li>
+            <li class="fragment">Q&amp;A and breaktime</li>
+            <li class="fragment">Get the app started</li>
+            <li class="fragment">Lunchtime!</li>
+            <li class="fragment">Talks</li>
+            <li class="fragment">Build and extend</li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>Welcome</li>
+              <li>Introduction to Programming and Ruby</li>
+              <li>Q&amp;A and breaktime</li>
+              <li>Get the app started</li>
+              <li>Lunchtime!</li>
+              <li>Talks</li>
+              <li>Build and extend</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
-        	<h2>Let's dive in!</h2>
-        	<img src="http://bukk.it/onward.gif" alt="">
-        	<aside class="notes">
-        		Onward!
-        	</aside>
+          <h2>Thanks to our sponsors</h2>
         </section>
 
         <section>
-        	<h2>Programs!</h2>
-        	<p>Software development vs web development</p>
-        	<p class="fragment">They're the same! Web development is just a subset of software development.</p>
-        	<aside class="notes">
-	        	<p>Software development vs web development</p>
-	        	<p class="fragment">They're the same! Web development is just a subset of software development.</p>
-	        </aside>
+          <h2>Four Athens</h2>
+          <h4>@fourathens</h4>
+          <p>Four Athens believes that Athens possesses all of ingredients necessary to create a strong technology startup hub.</p>
+          <aside class="notes">
+            Tech incubator. Four Athens believes that Athens possesses all of ingredients necessary to create a strong technology startup hub. Provided the space.
+          </aside>
         </section>
 
         <section>
-        	<h2>Programming is writing instructions</h2>
-        	<aside class="notes">
-        		You're telling your computer what to do. In this case, we're going to write instructions on how to handle requests from a web browser and return a response.
-        	</aside>
+          <h2><img src="https://s3.amazonaws.com/rails-girls-athens/sponsors/logos/000/000/004/medium/PartnerLogoText.png?1393383892" alt="" class="no-border"></h2>
+          <p>Partner Software develops software for the utility industry.</p>
+          <aside class="notes">
+            Partner Software develops software for the utility industry. Breakfast and lunch.
+          </aside>
         </section>
 
         <section>
-        	<h2>Programming is creative</h2>
-        	<aside class="notes">
-        		It's creative problem solving at its core. Imagine it's like instructions for a LEGO set - it walks through each step, adding a piece or combining different segments until it comes together like the picture on the box.
-        	</aside>
+          <h2>Big Nerd Ranch</h2>
+          <h4>@bignerdranch</h4>
+          <blockquote>When the Big Nerd Ranch started out, we did one thing and we did it well: we taught programming languages. Now, over a decade later, we’ve expanded to include consulting, software products and an ever-growing library of Big Nerd Ranch books.</blockquote>
+          <aside class="notes">
+            @bignerdranch
+            Software consulting, products, books, and bootcamps. Swag and coaches.
+          </aside>
         </section>
 
         <section>
-        	<h2>Our finished product is an application</h2>
-        	<aside class="notes">
-        		web app, mobile app, desktop app - they're all software applications with a specific domain. Ruby, the programming language we're going to use, can be used in all three, but we're focusing on building a web app.
-        	</aside>
+          <h2><img src="https://s3.amazonaws.com/rails-girls-athens/sponsors/logos/000/000/001/medium/VC_logo_full_tag.png?1392760816" alt="" class="no-border"></h2>
+          <h4>@getvitaminc</h4>
+          <p>Healthcare communication improved.</p>
+          <aside class="notes">
+            My company - Healthcare communication improved. T-shirts and booklets.
+          </aside>
         </section>
 
         <section>
-        	<h2>Web application vs web page vs website</h2>
-        	<img src="http://bukk.it/webpg.gif" alt="">
-        	<aside class="notes">
-        		<p>Different words that mean the same thing. A website is a destination that allows a web application to serve up a web page to the user. Ta da!</p>
-
-					  <p>Most people refer to static websites as having web pages.</p>
-					</aside>
+          <h1>What is Rails Girls?</h1>
+          <h4>@railsgirls</h4>
+          <img src="http://4.bp.blogspot.com/-bOQDj7OMdnc/TyL4dwOwayI/AAAAAAAAA3w/1x-oWT5ZxeU/s1600/girl_power_spice_girls_british_flag.gif" alt="">
+          <aside class="notes">
+            @railsgirls
+            Founded by Linda Liukas and Karri Saarinen. Linda grew up listening to the Spice Girls and girl power is not diminutive, but strong. The first event, held in Helsinki in November 2010, got over 100 interested girls signed-up for the workshop.
+          </aside>
         </section>
 
         <section>
-        	<h2>Static vs Dynamic</h2>
-        	<aside class="notes">
-        		<p>Static stays the same. Nothing changes unless the code is manually changed. Dynamic changes either based on a response from a database, a 3rd party service, even a clock - a dynamic website is built to accept changes to its content based on specific conditions.</p>
-        	</aside>
+          <h2>Code is literacy and valuable wherever you work.</h2>
+          <aside class="notes">
+            Code is literacy and valuable wherever you work. The goal is to empower women to build the capacity and acquire the tools to conquer the last online frontier.
+          </aside>
         </section>
 
         <section>
-        	<h1>WEB DESIGN</h1>
-        	<img src="http://bukk.it/webdesign.jpg" alt="">
+          <h2>Lingua franca of the web - technical literacy is vital.</h2>
+          <aside class="notes">Lingua franca of the web - technical literacy is vital.</aside>
         </section>
 
         <section>
-        	<h2>Rails is a dynamic web application framework</h2>
-        	<aside class="notes">
-        		<p>It's the bones and tendons of your application - you provide the organs.</p>
-        	</aside>
+          <h2>Not solitary, not mathematical - like any language, immersion is key.</h2>
+          <aside class="notes">Not solitary, not mathematical - like any language, immersion is key. Innovation occurs at intersections of experiences and perspectives.</aside>
         </section>
 
         <section>
-        	<h2>It's a whole lot of Ruby</h2>
-        	<aside class="notes"></aside>
+          <h2>It's not a matter of statistics, but perspective.</h2>
+          <aside class="notes">It's not a matter of statistics, but perspective. (But you're going to hear about statistics, too.)</aside>
         </section>
 
         <section>
-        	<h2>What is Ruby?</h2>
-        	<aside class="notes">
-        		<p>Developed by Yukihiro "Matz" Matsumoto in Japan in the mid 1990s. Ruby is designed for programmer productivity and fun, following the principles of good user interface design.</p>
-        	</aside>
+          <h2>She++</h2>
+          <blockquote>Founded in January 2012, she++ was Stanford's first conference on women in technology. In April 2012, we hosted a lineup of inspirational women in tech--from companies such as Google, Facebook, Dropbox, and Pinterest, among others--and 250+ attendees on Stanford's campus.
+          </blockquote>
+          <a class="pull-right" href="http://sheplusplus.stanford.edu/">- http://sheplusplus.stanford.edu/</a>
+          <aside class="notes"></aside>
         </section>
 
         <section>
-        	<img src="http://bukk.it/knowdlege.jpg" alt="">
+          <h2>Let's dive in!</h2>
+          <img src="http://bukk.it/onward.gif" alt="">
+          <aside class="notes">
+            Onward!
+          </aside>
         </section>
 
         <section>
-        	<h2>Let's try it out!</h2>
-        	<h4><a href="http://tryruby.org">Tryruby.org</a></h4>
-        	<aside class="notes">Note: type the code EXACTLY as they tell you. The in-browser editor can be unforgiving.</aside>
+          <h2>Programs!</h2>
+          <p>Software development vs web development</p>
+          <p class="fragment">They're the same! Web development is just a subset of software development.</p>
+          <aside class="notes">
+            <p>Software development vs web development</p>
+            <p>They're the same! Web development is just a subset of software development.</p>
+          </aside>
         </section>
 
         <section>
-        	<h2>Not bad, right?</h2>
-        	<aside class="notes"></aside>
+          <h2>Programming is writing instructions</h2>
+          <aside class="notes">
+            You're telling your computer what to do. In this case, we're going to write instructions on how to handle requests from a web browser and return a response.
+          </aside>
+        </section>
+
+          <section>
+           <h2>Programming is creative</h2>
+           <aside class="notes">
+            It's creative problem solving at its core. Imagine it's like instructions for a LEGO set - it walks through each step, adding a piece or combining different segments until it comes together like the picture on the box.
+          </aside>
         </section>
 
         <section>
-        	<h2>Let's put Ruby on some Rails!</h2>
-        	<h3>http://guides.railsgirls.com/app/</h3>
-        	<aside class="notes"></aside>
-        </section>
+         <h2>Our finished product is an application</h2>
+         <aside class="notes">
+          web app, mobile app, desktop app - they're all software applications with a specific domain. Ruby, the programming language we're going to use, can be used in all three, but we're focusing on building a web app.
+        </aside>
+      </section>
 
-        <section>
-        	<h2>Create your application</h2>
-        	<pre><code>
+      <section>
+       <h1>WEB DESIGN</h1>
+       <img src="http://bukk.it/webdesign.jpg" alt="">
+     </section>
+
+     <section>
+       <h2>Rails is a dynamic web application framework</h2>
+       <aside class="notes">
+        <p>It's the bones and tendons of your application - you provide the organs.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>It's a whole lot of Ruby</h2>
+      <aside class="notes"></aside>
+    </section>
+
+    <section>
+      <h2>What is Ruby?</h2>
+      <aside class="notes">
+        <p>Developed by Yukihiro "Matz" Matsumoto in Japan in the mid 1990s. Ruby is designed for programmer productivity and fun, following the principles of good user interface design.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Let's see some Ruby in action</h2>
+      <pre><code>
+  $ irb
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Ruby Data types</h2>
+      <ul>
+        <li>String: "Jordan"</li>
+        <li>Integer: 42</li>
+        <li>Float: 16.5</li>
+        <li>Boolean: true or false</li>
+        <li>Symbol: :first_name</li>
+        <li>Array: ["banana", "apple", "peach", "grapes", "tomato"]</li>
+        <li>Hash: {"hash?" => "yep, it's a hash!", "the answer to everything" => 42, :linux => "fun for coders."}</li>
+      </ul>
+    </section>
+
+    <section>
+      <pre><code>
+  $
+      </code></pre>
+    </section>
+
+    <section>
+     <img src="http://bukk.it/knowdlege.jpg" alt="">
+    </section>
+
+    <section>
+      <h2>The Bento Box</h2>
+    </section>
+
+    <section>
+      <img src="img/bentobox.jpg" alt="">
+    </section>
+
+    <section>
+      <ol>
+        <li>PHP</li>
+        <li>SaaS</li>
+        <li>RoR</li>
+        <li>HTML</li>
+        <li>MongoDB</li>
+        <li>Apache</li>
+        <li>CSS</li>
+        <li>Django</li>
+        <li>MySQL</li>
+        <li>nginx</li>
+      </ol>
+    </section>
+
+    <section>
+     <h2>Let's put Ruby on some Rails!</h2>
+     <h3>http://guides.railsgirls.com/app/</h3>
+     <aside class="notes"></aside>
+    </section>
+
+    <section>
+     <h2>Create your application</h2>
+     <pre><code>
   $ mkdir projects
-        	</code></pre>
+    </code></pre>
 
-        	<pre class="fragment"><code>
+    <pre class="fragment"><code>
   $ cd projects
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<pre><code>
+    <section>
+     <pre><code>
   $ rails new railsgirls
-        	</code></pre>
-        	<pre class="fragment"><code>
+    </code></pre>
+    <pre class="fragment"><code>
   $ rails server
-        	</code></pre>
-        </section>
+    </code></pre>
+    </section>
 
-        <section>
-        	<h2>Go to http://localhost:3000 in your browser</h2>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Go to http://localhost:3000 in your browser</h2>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Return to the command prompt</h2>
-        	<h3>Shut down the server: CTRL-C</h3>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Return to the command prompt</h2>
+     <h3>Shut down the server: CTRL-C</h3>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Awesome!</h2>
-        	<img src="http://bukk.it/notbad.gif" alt="">
-        </section>
+    <section>
+     <h2>Awesome!</h2>
+     <img src="http://bukk.it/notbad.gif" alt="">
+    </section>
 
-        <section>
-        	<h2>Scaffolds</h2>
-        	<aside class="notes">
-        		Creates all the guts you need to create, retrieve, update, and destroy something
-        	</aside>
-        </section>
+    <section>
+     <h2>Scaffolds</h2>
+     <aside class="notes">
+      Creates all the guts you need to create, retrieve, update, and destroy something
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Down in the CRUD</h2>
-        	<p><strong>C</strong>reate, <strong>R</strong>etrieve, <strong>U</strong>pdate, and <strong>D</strong>estroy</p>
-        	<aside class="notes">
-        		Rails creates the model, the related database table, the controller, and the views
-        	</aside>
-        </section>
+    <section>
+     <h2>Down in the CRUD</h2>
+     <p><strong>C</strong>reate, <strong>R</strong>etrieve, <strong>U</strong>pdate, and <strong>D</strong>estroy</p>
+     <aside class="notes">
+      Rails creates the model, the related database table, the controller, and the views
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Generate your scaffold</h2>
-        	<pre><code>
+    <section>
+     <h2>Generate your scaffold</h2>
+     <pre><code>
   $ rails generate scaffold idea name:string description:text picture:string
-        	</code></pre>
-        	<aside class="notes">
-        		After the colon - those are datatypes. The attribute name has a datatype of string. An attribute is a specific piece of a model. A model is a representation of a database object - its name is singular, but you can have many instances of them.
-        	</aside>
-        </section>
+    </code></pre>
+    <aside class="notes">
+      After the colon - those are datatypes. The attribute name has a datatype of string. An attribute is a specific piece of a model. A model is a representation of a database object - its name is singular, but you can have many instances of them.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Migrate the database</h2>
-        	<pre><code>
+    <section>
+     <h2>Migrate the database</h2>
+     <pre><code>
   $ rake db:migrate
-        	</code></pre>
-        	<pre class="fragment"><code>
+    </code></pre>
+    <pre class="fragment"><code>
   $ rails server
-        	</code></pre>
-        	<aside class="notes">
-        		Rails uses ActiveRecord to talk to the database, so you don't have to. It's like an interpreter that can help you select cultural delicacies while you're abroad. So you can make sure you don't eat sheep face, unless that's your deal.
-        	</aside>
-        </section>
+    </code></pre>
+    <aside class="notes">
+      Rails uses ActiveRecord to talk to the database, so you don't have to. It's like an interpreter that can help you select cultural delicacies while you're abroad. So you can make sure you don't eat sheep face, unless that's your deal.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>http://localhost:3000/ideas (notice a theme here?)</h2>
-        	<h4>CTRL-C to exit again</h4>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h3><a href="http://localhost:3000/ideas">http://localhost:3000/ideas</a> (notice a theme here?)</h3>
+     <h4>CTRL-C to exit again</h4>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Models provide the data. How does it know what to display?</h2>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Models provide the data. How does it know what to display?</h2>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>MVC - Model View Controllers</h2>
-        	<aside class="notes">
-        	  Kylie will talk more about it later - controllers feed the data to the views in the meantime.
-        	</aside>
-        </section>
+    <section>
+     <h2>MVC - Model View Controllers</h2>
+     <aside class="notes">
+       Kylie will talk more about it later - controllers feed the data to the views in the meantime.
+     </aside>
+    </section>
 
-        <section>
-        	<h2>Let's look at the views</h2>
-        	<p>In your text editor, check out any file in</p>
-        	<pre><code>
+    <section>
+     <h2>Let's look at the views</h2>
+     <p>In your text editor, check out any file in</p>
+     <pre><code>
   app/views
-        	</code></pre>
-        	<aside class="notes">
-        		A combination of HTML and Ruby. ERB stands for embedded Ruby - Rails knows to look for Ruby statements in the HTML.
-        	</aside>
-        </section>
+    </code></pre>
+    <aside class="notes">
+      A combination of HTML and Ruby. ERB stands for embedded Ruby - Rails knows to look for Ruby statements in the HTML.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>What's a Ruby statement look like?</h2>
-        	<aside class="notes">
-        		Any guesses?
-        	</aside>
-        </section>
+    <section>
+     <h2>What's a Ruby statement look like?</h2>
+     <aside class="notes">
+      Any guesses?
+    </aside>
+    </section>
 
-        <section>
-        	<h2><% %></h2>
-        	<h4>Congrats! You have all won one Internet.</h4>
-        	<img src="http://bukk.it/moshi.jpg" alt="">
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2><% %></h2>
+     <h4>Congrats! You have all won one Internet.</h4>
+     <img src="http://bukk.it/moshi.jpg" alt="">
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>It's kinda ugly, isn't it?</h2>
-        	<h4>Our application I mean.</h4>
-        	<aside class="notes">
-        		Browsers have default styles. In this case, style is a loosely applied term.
-        	</aside>
-        </section>
+    <section>
+     <h2>It's kinda ugly, isn't it?</h2>
+     <h4>Our application I mean.</h4>
+     <aside class="notes">
+      Browsers have default styles. In this case, style is a loosely applied term.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>We can make it better. We have the technology.</h2>
-        	<aside class="notes">
-        		Twitter Bootstrap is a framework to make a web application have a well designed front end without much hassle.
-        	</aside>
-        </section>
+    <section>
+     <h2>We can make it better. We have the technology.</h2>
+     <aside class="notes">
+      Twitter Bootstrap is a framework to make a web application have a well designed front end without much hassle.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Add the Twitter Bootstrap declarations to your app/views/layouts/application.html.erb file.</h2>
-        	<h3>Replace the content as indicated in the guide.</h3>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Add the Twitter Bootstrap declarations to your layout.</h2>
+     <pre><code>
+  app/views/layouts/application.html.erb
+     </code></pre>
+     <h3>Replace the content as indicated in the guide.</h3>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Fire up the server again.</h2>
-        	<pre><code>
+    <section>
+     <h2>Fire up the server again.</h2>
+     <pre><code>
   $ rails server
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Head to http://localhost:3000/ideas</h2>
-        	<h4>Doesn't that look more functional?</h4>
-        	<img src="http://bukk.it/motherofgod.gif" alt="">
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Head to http://localhost:3000/ideas</h2>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Shut it down.</h2>
-        	<h4>CTRL-C</h4>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>A picture is worth 1000 words</h2>
+     <aside class="notes">
+      <p>Remember that picture attribute we created? Why do you think it had the datatype string?</p>
+      <p>We're going to add the ability to upload pictures and then save the location of that picture as the string.</p>
+    </aside>
+    </section>
 
-        <section>
-        	<h2>A picture is worth 1000 words</h2>
-        	<aside class="notes">
-        		<p>Remember that picture attribute we created? Why do you think it had the datatype string?</p>
-        		<p>We're going to add the ability to upload pictures and then save the location of that picture as the string.</p>
-        	</aside>
-        </section>
+    <section>
+     <h2>Mining for Gems</h2>
+     <aside class="notes">
+      <p>Gems are Ruby libraries that you can plug in to your application. They live in your Gemfile. Gems add functionality to your web application that saves you time from having to code in yourself. One of the tenants of Rails is DRY - Don't Repeat Yourself. Don't re-invent the wheel if someone else has done the work for you.</p>
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Mining for Gems</h2>
-        	<aside class="notes">
-        		<p>Gems are Ruby libraries that you can plug in to your application. They live in your Gemfile. Gems add functionality to your web application that saves you time from having to code in yourself. One of the tenants of Rails is DRY - Don't Repeat Yourself. Don't re-invent the wheel if someone else has done the work for you.</p>
-        	</aside>
-        </section>
-
-        <section>
-        	<h2>Add the Carrierwave gem</h2>
-        	<p>Add to Gemfile:</p>
-        	<pre><code>
+    <section>
+     <h2>Add the Carrierwave gem</h2>
+     <p>Add to Gemfile:</p>
+     <pre><code>
   gem 'carrierwave'
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Bundler manages your gems and their integration into your application</h2>
-      		<pre><code>
+    <section>
+     <h2>Bundler manages your gems and their integration into your application</h2>
+     <pre><code>
   $ bundle
-      		</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Generate the uploader!</h2>
-        	<pre><code>
+    <section>
+     <h2>Generate the uploader!</h2>
+     <pre><code>
   $ rails generate uploader Picture
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Prep the model</h2>
-        	<p>In the Idea.rb file (located at app/models/idea.rb) add:</p>
-        	<pre><code>
+    <section>
+     <h2>Prep the model</h2>
+     <p>In the Idea.rb file (located at app/models/idea.rb) add:</p>
+     <pre><code>
   mount_uploader :picture, PictureUploader
-        	</code></pre>
-        	<p>directly underneath the top line.</p>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <p>directly underneath the top line.</p>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Prep the form</h2>
-        	<p>In app/views/ideas/_form.html.erb, replace</p>
-        	<pre><code>
+    <section>
+     <h2>Prep the form</h2>
+     <p>In app/views/ideas/_form.html.erb, replace</p>
+     <pre><code>
   <%= f.text_field :picture %>
-					</code></pre>
-        	<p>with</p>
-        	<pre><code>
+    </code></pre>
+    <pre><code>
   <%= f.file_field :picture %>
-        	</code></pre>
-        </section>
+    </code></pre>
+    </section>
 
-       	<section>
-       		<h2>Prep the view</h2>
-       		<p>In app/views/ideas/show.html.erb, replace</p>
-       		<pre><code>
+    <section>
+     <h2>Prep the view</h2>
+     <p>In app/views/ideas/show.html.erb, replace</p>
+     <pre><code>
   <%= @idea.picture %>
-       		</code></pre>
-       		<p>with</p>
-       		<pre><code>
+    </code></pre>
+    <p>with</p>
+    <pre><code>
   <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
-       		</code></pre>
-       	</section>
+    </code></pre>
+    </section>
 
-        <section>
-        	<h2>Fire up the server!</h2>
-        	<pre><code>
+    <section>
+     <h2>Fire up the server!</h2>
+     <pre><code>
   $ rails server
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>http://localhost:3000/ideas</h2>
-        	<h4>Add a picture. I recommend this one:</h4>
-        	<img src="http://bukk.it/schrodinger.jpg" alt="">
-        	<p>http://bukk.it/schrodinger.jpg</p>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>http://localhost:3000/ideas</h2>
+     <h4>Add a picture. I recommend this one:</h4>
+     <img src="http://bukk.it/schrodinger.jpg" alt="">
+     <p>http://bukk.it/schrodinger.jpg</p>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Awesome!</h2>
-        	<img src="http://bukk.it/internet.jpg" alt="">
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Awesome!</h2>
+     <img src="http://bukk.it/internet.jpg" alt="">
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>But why can't we just go to http://localhost:3000?</h2>
-        	<aside class="notes">
-        		Rails follows the routes we define. We have to tell it to respond with the page we want if we want something other than the default
-        	</aside>
-        </section>
+    <section>
+     <h2>But why can't we just go to http://localhost:3000?</h2>
+     <aside class="notes">
+      Rails follows the routes we define. We have to tell it to respond with the page we want if we want something other than the default
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Convention over configuration - one of the central tenets of Rails.</h2>
-        	<aside class="notes">
-        		Means a developer only needs to specify unconventional aspects of the application
-        	</aside>
-        </section>
+    <section>
+     <h2>Convention over configuration - one of the central tenets of Rails.</h2>
+     <aside class="notes">
+      Means a developer only needs to specify unconventional aspects of the application
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Let's update the routes</h2>
-        	<p>In your text editor, go to</p>
-        	<pre><code>
+    <section>
+     <h2>Let's update the routes</h2>
+    <p>In your text editor, go to
+      <pre><code>
   config/routes.rb
-        	</code></pre>
-        	<p>and after the first line add</p>
-        	<pre><code>
-  root :to => redirect('/ideas')
-        	</code></pre>
-        	<aside class="notes"></aside>
-        </section>
+      </code></pre>
+    </p>
+    <p>and after the first line add</p>
+    <pre><code>
+      root :to => redirect('/ideas')
+    </code></pre>
+    <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>We'll talk more about routing later.</h2>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Restart your server and go to http://localhost:3000</h2>
+     <aside class="notes"></aside>
+    </section>
+    <section>
+     <h2>Fantastic!</h2>
+     <img src="http://media.tumblr.com/c578314103a65f4343d0ac9897914128/tumblr_inline_mmydoeo58G1qz4rgp.gif" alt="">
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Restart your server and go to http://localhost:3000</h2>
-        	<aside class="notes"></aside>
-        </section>
-        <section>
-        	<h2>Fantastic!</h2>
-        	<img src="http://media.tumblr.com/c578314103a65f4343d0ac9897914128/tumblr_inline_mmydoeo58G1qz4rgp.gif" alt="">
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>What about pages that don't need dynamic information?</h2>
+     <aside class="notes">
+      Rails can handle static pages too - if we tell it how to control those requests.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>What about pages that don't need dynamic information?</h2>
-        	<aside class="notes">
-        		Rails can handle static pages too - if we tell it how to control those requests.
-        	</aside>
-        </section>
+    <section>
+     <h2>Let's create a static pages controller</h2>
+     <pre><code>
+      $ rails generate controller pages info
+    </code></pre>
+    <aside class="notes">
+      This creates a new folder in views, too - it's ready for some static content!
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Let's create a static pages controller</h2>
-       		<pre><code>
-  $ rails generate controller pages info
-       		</code></pre>
-        	<aside class="notes">
-        		This creates a new folder in views, too - it's ready for some static content!
-        	</aside>
-        </section>
+    <section>
+     <h3>Add a short biography about yourself to app/views/pages/info.html.erb. Ask your coaches if you need some help.</h3>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h3>Add a short biography about yourself to app/views/pages/info.html.erb. Ask your coaches if you need some help.</h3>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Rails is smart - it added the route for us automatically!</h2>
+     <h4>Restart your server and visit http://localhost:3000/pages/info</h4>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Rails is smart - it added the route for us automatically!</h2>
-        	<h4>Restart your server and visit http://localhost:3000/pages/info</h4>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Pretty cool, huh?</h2>
+     <aside class="notes">
+      After lunch we're going to extend our applications and hear from Julie and Kylie about their experiences as developers and get a little deeper into the guts of Rails.
+    </aside>
+    </section>
 
-        <section>
-        	<h2>Pretty cool, huh?</h2>
-        	<aside class="notes">
-        		After lunch we're going to extend our applications and hear from Blithe and Kylie about their experiences as developers and get a little deeper into the guts of Rails.
-        	</aside>
-        </section>
+    <section>
+     <h2>Lunchtime!</h2>
+     <img src="http://bukk.it/lunch.gif" alt="">
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Lunchtime!</h2>
-        	<img src="http://bukk.it/lunch.gif" alt="">
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <h2>Lightning Talks</h2>
+    </section>
 
-        <section>
-        	<h2>The Bentobox</h2>
-        	<script async class="speakerdeck-embed" data-id="4f6c78491388a6001f01dff6" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
-        	<aside class="notes">https://speakerdeck.com/railsgirls/rails-girls-bentobox-exercise</aside>
-        </section>
+    <section>
+     <h2>Extend your applications</h2>
+     <p>As a group, look at some of the other guides and add features to your applications with the help of your coaches. It's your application - do with it what you will!</p>
+     <aside class="notes">As a group, look at some of the other guides and add features to your applications with the help of your coaches. It's your application - do with it what you will!</aside>
+    </section>
 
-        <section>
-        	<h2>Talks and giveaways</h2>
-        	<aside class="notes">http://www.random.org/</aside>
-        </section>
+    <section>
+     <h2>Going further</h2>
+     <p>Code School has been awesome enough to give everyone here a 2 day all access hall pass to their site</p>
+     <h4>http://go.codeschool.com/XUaw2w</h4>
+     <p>If you're interested in signing up with them, they've given us a special rate - just let me know and I'll send you the information.</p>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Extend your applications</h2>
-        	<p>As a group, look at some of the other guides and add features to your applications with the help of your coaches. It's your application - do with it what you will!</p>
-        	<aside class="notes">As a group, look at some of the other guides and add features to your applications with the help of your coaches. It's your application - do with it what you will!</aside>
-        </section>
+    <section>
+     <h2>Other resources in your booklet</h2>
+     <p>Learn Rails from Daniel Kehoe</p>
+     <p>Join the Developers of Athens meetup: http://www.meetup.com/Greater-Athens-Area-Software-Developers/
+     </p>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Going further</h2>
-        	<p>Code School has been awesome enough to give everyone here a 2 day all access hall pass to their site</p>
-        	<h4>http://go.codeschool.com/XUaw2w</h4>
-        	<p>If you're interested in signing up with them, they've given us a special rate - just let me know and I'll send you the information.</p>
-        	<aside class="notes"></aside>
-        </section>
+    <section>
+     <img class="no-border" src="img/RG_LogoFinal.png" alt="">
+     <h3>Thanks for coming - don't stop learning!</h3>
+     <p>Feel free to email me if I can help you with next steps or you need anything!</p>
+     <aside class="notes"></aside>
+    </section>
 
-        <section>
-        	<h2>Other resources in your booklet</h2>
-        	<p>Learn Rails from Daniel Kehoe</p>
-        	<p>Join the Developers of Athens meetup: http://www.meetup.com/Greater-Athens-Area-Software-Developers/
-</p>
-        	<p>FourAthens Happy Hour - Wednesdays 6pm at The Capitol Room</p>
-        	<aside class="notes"></aside>
-        </section>
+  </div>
 
-        <section>
-        	<img class="no-border" src="img/RG_LogoFinal.png" alt="">
-        	<h3>Thanks for coming - don't stop learning!</h3>
-        	<p>Feel free to email me if I can help you with next steps or you need anything!</p>
-        	<p>Interested in being a coach at our next workshop? See me or Angel!</p>
-        	<aside class="notes"></aside>
-        </section>
+</div>
 
-      </div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
 
-    </div>
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-
-    <script>
+<script>
 
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
@@ -573,16 +657,16 @@
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
 
-    </script>
+</script>
 
-  </body>
+</body>
 </html>
